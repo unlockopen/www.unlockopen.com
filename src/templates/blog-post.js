@@ -31,7 +31,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pathContext
     return (
       <Layout bio={post.fields.bio}>
-        <Helmet title={`${post.fields.title} | ${siteTitle}`} />
+        <Helmet title={[post.fields.title, siteTitle].filter(t => t).join(" | ")} />
 
         <h1>{post.fields.title}</h1>
       <p
