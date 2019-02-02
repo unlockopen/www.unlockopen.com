@@ -47,7 +47,6 @@ class BlogPostTemplate extends React.Component {
       </small></p>
 
         <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
-        <ArticleReaders readers={post.fields.readers} />
 
     
       </Layout>
