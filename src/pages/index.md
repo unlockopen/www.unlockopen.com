@@ -6,7 +6,7 @@ bio: true
 
 And yet… whereas every company uses it, few contribute back.
 
-And so we hear of resource-strapped projects, security concerns, maintainer burnout, and sustainability issues. There's even a conceference specifically about the latter.
+And so we hear of resource-strapped projects, security concerns, maintainer burnout, and sustainability issues. There's even a conference specifically about the latter.
 
 But what initially seems like a tragedy of the commons is actually a **gigantic opportunity**. There is more to contributing to open source than "doing the right thing" or "paying it forward."
 
@@ -18,7 +18,7 @@ Contributing to open source has **strategic benefits** that tech giants are well
 
 First, contributing to open source is critical to **recruit, retain, and foster top engineering talent**.
 Facebook claims that 75% of their new engineering recruits mention its open source program as a key reason to join the company.
-Similalry, a relatively modest investment in Webpack helped the hotel price comparison company Trivago position itself as _"one of the most interesting companies to work for as a JavaScript developer,"_ and hire _"a lot of really great engineers,"_ according to their Lead JavaScript Architect, Patrick Gotthardt.
+Similarly, a relatively modest investment in Webpack helped the hotel price comparison company Trivago position itself as _"one of the most interesting companies to work for as a JavaScript developer,"_ and hire _"a lot of really great engineers,"_ according to their Lead JavaScript Architect, Patrick Gotthardt.
 
 Secondly, contributing to open source has proven to be **a catalyst to attract developers to software platforms and services**.
 Still wondering why Microsoft or IBM spent billions on companies based around open source? Wonder no longer.
