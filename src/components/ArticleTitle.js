@@ -3,12 +3,16 @@ import React from 'react'
 // Import typefaces
 import 'typeface-montserrat'
 import 'typeface-merriweather'
+import get from 'lodash/get'
+import PropTypes from 'prop-types';
 
 import profilePic from './profile-pic.jpg'
 import { rhythm } from '../utils/typography'
 
-class Bio extends React.Component {
+class ArticleTitle extends React.Component {
   render() {
+    const author = this.props.author;
+      
     return (
       <div
         style={{
@@ -18,7 +22,7 @@ class Bio extends React.Component {
       >
         <img
           src={profilePic}
-          alt={`Kyle Mathews`}
+          alt={author}
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
@@ -27,7 +31,7 @@ class Bio extends React.Component {
           }}
         />
         <p>
-          Written by <strong>Kyle Mathews</strong> who lives and works in San
+          Written by <strong>{author}</strong> who lives and works in San
           Francisco building useful things.{' '}
           <a href="https://twitter.com/kylemathews">
             You should follow him on Twitter
@@ -37,5 +41,7 @@ class Bio extends React.Component {
     )
   }
 }
-
+Bio.propTypes = {
+  author: PropTypes.string.isRequired
+};
 export default Bio

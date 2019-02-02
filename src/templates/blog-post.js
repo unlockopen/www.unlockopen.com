@@ -3,63 +3,54 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 
-import Bio from '../components/Bio'
+import Layout from '../components/Layout'
+import ArticleReaders from '../components/ArticleReaders'
 import { rhythm, scale } from '../utils/typography'
+
+const JsonLd = ({ data }) =>
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+  />;
+  
+  const data = {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Open-source framework for publishing content",
+      "datePublished": "2015-10-07T12:02:41Z",
+      "image": [
+        "logo.jpg"
+      ]
+  };
+  
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next } = this.props.pathContext
-
     return (
-      <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <Bio />
+      <Layout bio={post.fields.bio}>
+        <Helmet title={`${post.fields.title} | ${siteTitle}`} />
 
-        <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            listStyle: 'none',
-            padding: 0,
-          }}
-        >
-          {previous && (
-            <li>
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            </li>
-          )}
+        <h1>{post.fields.title}</h1>
+      <p
+        style={{
+            color: "#999",
+          display: 'block',
+          marginBottom: rhythm(1),
+          marginTop: rhythm(-1),
+            
+        }}
+      ><small>
+        {post.fields.date}
+      </small></p>
 
-          {next && (
-            <li>
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            </li>
-          )}
-        </ul>
-      </div>
+        <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <ArticleReaders readers={post.fields.readers} />
+
+    
+      </Layout>
     )
   }
 }
@@ -71,15 +62,16 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
-      frontmatter {
+      fields {
         title
-        date(formatString: "MMMM DD, YYYY")
+        readers
+        date(formatString: "MMMM D, YYYY")
+        bio
       }
     }
   }
