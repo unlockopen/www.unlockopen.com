@@ -69,7 +69,6 @@ export const pageQuery = graphql`
       html
       fields {
         title
-        readers
         date(formatString: "MMMM D, YYYY")
         bio
       }
