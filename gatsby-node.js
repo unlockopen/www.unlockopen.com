@@ -7,7 +7,7 @@ const { attachFields } = require(`gatsby-plugin-node-fields`)
 
 const QUERY_POST = `
 query Post {
-  allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
+  allMarkdownRemark(limit: 1000) {
     edges {
       node {
         fields {
