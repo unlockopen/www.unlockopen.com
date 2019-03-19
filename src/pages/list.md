@@ -19,5 +19,8 @@ If you subscribe, here's the kind of content you'll find fresh in your inbox rea
 * [Measuring the health of open source projects](https://medium.com/@tobie/measuring-the-health-of-open-source-projects-8a54eca9bc2d)
 * [Is patronage a sustainable solution to open source sustainability?](https://hackernoon.com/is-patronage-a-sustainable-solution-to-open-source-sustainability-332e5c302909)
 
+You won't get any spam or irrelevant ads. Just quality content. And you can unsubscribe whenever you want.
+
 What's not to like?
+
 
