@@ -9,9 +9,9 @@ what's happening behind the scenes,
 how open source is changing how we build software and conduct business,
 you came to the right place.
 
-Tobie Langel write multiple times a week about the interesection of open source, business, and culture.
+Tobie Langel write multiple times a week about the intersection of open source, business, and culture.
 
-If you subscribe, here's the kind of content you'll find fresh in your inbox ready for your morning coffee:
+Here's the kind of content you'll find, fresh in your inbox, ready for your morning coffee:
 
 * [Behold second-order consequences!](https://medium.com/@tobie/behold-second-order-consequences-5ae4b0287d5)
 * [To attract top talent, companies need to adopt more balanced IP agreements](https://medium.com/@tobie/to-attract-top-talent-companies-need-to-adopt-more-balanced-ip-agreements-f27bbdc9c0ad)
