@@ -9,7 +9,7 @@ what's happening behind the scenes,
 how open source is changing how we build software and conduct business,
 you came to the right place.
 
-Tobie Langel write multiple times a week about the interesection of open source, business, and culture,
+Tobie Langel write multiple times a week about the interesection of open source, business, and culture.
 
 If you subscribe, here's the kind of content you'll find fresh in your inbox ready for your morning coffee:
 
