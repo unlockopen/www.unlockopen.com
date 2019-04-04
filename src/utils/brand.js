@@ -6,7 +6,7 @@ export const COLOR_TERTIARY   = '#afc51d';
 export const COLOR_QUARTERLY  = '#4daadb';
 export const COLOR_BACKGROUND = '#ffffff';
 
-export const COLOR_LOGO = [COLOR_QUARTERLY, COLOR_TERTIARY, COLOR_PRIMARY, COLOR_SECONDARY];
+export const COLOR_LOGO = [COLOR_TERTIARY, COLOR_QUARTERLY, COLOR_PRIMARY, COLOR_SECONDARY];
 
 export const WORDMARK_FONT_FAMILY        = "\"Merriweather Sans\"";
 export const WORDMARK_FONT_WEIGHT_UNLOCK = 300;
