@@ -31,9 +31,7 @@ class Info extends React.Component {
       <tr>
         <th>Business Registry:</th>
         <td>
-          <a href="https://ge.ch/hrcintapp/companyReport.action?lang=EN&rcentId=14574965200000066031025&showHeader=true">Web</a>
-          |
-          <a href="https://ge.ch/hrcintreport/createReport?rcentId=14574965200000066031025&lang=FR">PDF</a>
+          <a href="https://ge.ch/hrcintapp/companyReport.action?lang=EN&rcentId=14574965200000066031025&showHeader=true">Web</a> | <a href="https://ge.ch/hrcintreport/createReport?rcentId=14574965200000066031025&lang=FR">PDF</a>
         </td>
       </tr>
     </table>
