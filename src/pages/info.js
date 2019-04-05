@@ -13,8 +13,8 @@ class Info extends React.Component {
         
         <h1>UnlockOpen LLC</h1>
 
- <h2>Company</h2>
-    <table class="table table-hover">
+ <h2>Company details</h2>
+    <table>
       <tr><th>Company name:</th><td>UnlockOpen LLC</td></tr>
       <tr><th>Street address:</th><td>4, route de l'Eaumorte</td></tr>
       <tr><th>City:</th><td>Laconnex</td></tr>
@@ -24,19 +24,19 @@ class Info extends React.Component {
       <tr><th>Phone:</th><td><a href="tel:+41 79 173 19 49">+41 79 173 19 49</a></td></tr>
       <tr><th>Email:</th><td><a href="mailto:billing@unlockopen.com">billing@unlockopen.com</a></td></tr>
     </table>
-    <h4>Corporate ID</h4>
-    <table class="table table-hover">
+    <h2>Corporate ID</h2>
+    <table>
       <tr><th>D-U-N-S number:</th><td>48-534-3110</td></tr>
       <tr><th>Swiss UID:</th><td>CHE-115.171.786</td></tr>
       <tr>
         <th>Business Registry:</th>
-        <td><a href="http://ge.ch/hrcintapp/externalCompanyReport.action?companyOfrcId13=CH-660-2495009-0&amp;ofrcLanguage=4">Web</a>
-          | <a href="http://rc.ge.ch/hrcintreport/createReport?rcentId=12587376200000066031025&lang=EN&order=F&rad=N">PDF</a>
+        <td><a href="https://ge.ch/hrcintapp/companyReport.action?lang=EN&rcentId=14574965200000066031025&showHeader=true">Web</a>
+          | <a href="https://ge.ch/hrcintreport/createReport?rcentId=14574965200000066031025&lang=FR">PDF</a>
         </td>
       </tr>
     </table>
-    <h4>Bank Details</h4>
-    <table class="table table-hover">
+    <h2>Bank Details</h2>
+    <table>
       <tr><th>Bank name:</th><td>	UBS S.A.</td></tr>
       <tr><th>Street address:</th><td>Rue des Noirettes 35</td></tr>
       <tr><th>&nbsp;</th><td>Centre des Acacias</td></tr>
