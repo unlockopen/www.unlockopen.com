@@ -7,7 +7,7 @@ import ColorLine from './ColorLine'
 
 import { rhythm, scale } from '../utils/typography'
 
-class Layout extends React.Component {
+class BasicLayout extends React.Component {
   render() {
     return (
         <div>
@@ -37,7 +37,7 @@ class Layout extends React.Component {
   }
 }
 
-export default Layout
+export default BasicLayout
 
 
 
