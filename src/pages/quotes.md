@@ -2,6 +2,11 @@
 title: Industry leaders explain the benefits of contributing to open source
 ---
 
+Contributing to open source is still relatively uncommon, even in the tech industry itself.
+Yet the companies who have built a strong open source culture really have an edge over those that don't.
+
+Here are a few industry leaders explaining why:
+
 > "Technology leadership is not defined by patents […]
 but rather by the ability of a company to attract and motivate the world’s most talented engineers.
 We believe that applying the open source philosophy to our patents
