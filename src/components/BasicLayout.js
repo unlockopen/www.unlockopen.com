@@ -9,6 +9,7 @@ import { rhythm, scale } from '../utils/typography'
 
 class BasicLayout extends React.Component {
   render() {
+    const children = this.props.children;
     return (
         <div>
             <Helmet>
