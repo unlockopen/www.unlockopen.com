@@ -1,3 +1,7 @@
+---
+title: Industry leaders explain the benefits of contributing to open source
+---
+
 > "Open source helps us retain and attract talent.
 People, the new generation especially,
 get their street creds from submitting to open source."
