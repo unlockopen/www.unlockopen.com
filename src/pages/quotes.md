@@ -15,12 +15,20 @@ and that collaborative development through the open source process can accelerat
 
 —Satya Nadella, CEO, Microsoft
 
-"In today's world of fast-paced internet services deployment,
+> "In today's world of fast-paced internet services deployment,
 owning IP has become considerably less important
 than turning research results into innovative products as quickly as possible,
 and deploying them at scale."
 
-—Yann LeCun, Director of AI Research, Facebook, Founding Director, NYU Center for Data Science.
+—Yann LeCun, Director of AI Research, Facebook, and Founding Director, NYU Center for Data Science
+
+> "Open source really helps us on two fronts: one is costs and the other is speed.
+>
+> On the cost front, if we were to approach software in a closed manner we'd get saddled with all the lifecycle costs from birth to death of that software project. But if we're able to put it into open source, and show how others can take advantage and use it, we actually share the costs, and we get their innovation.
+> 
+> Now where the speed comes in, is where we get others to help collaborate and advance that software for us; not just for their needs, but for our needs as well. So it really helps us on cost and speed."
+
+—Andre Fuetsch, CTO, AT&T, and President, AT&T Labs
 
 ## Recruiting and retaining talent
 
