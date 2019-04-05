@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import BasicLayout from '../components/BasicLayout'
 import Helmet from 'react-helmet'
 
 import { rhythm, scale, options} from '../utils/typography'
@@ -8,7 +8,7 @@ import * as brand from '../utils/brand'
 class Info extends React.Component {
   render() {
     return (
-      <Layout>
+      <BasicLayout>
         <Helmet title="UnlockOpen LLC Info" />
         
         <h1>UnlockOpen LLC</h1>
@@ -30,8 +30,10 @@ class Info extends React.Component {
       <tr><th>Swiss UID:</th><td>CHE-115.171.786</td></tr>
       <tr>
         <th>Business Registry:</th>
-        <td><a href="https://ge.ch/hrcintapp/companyReport.action?lang=EN&rcentId=14574965200000066031025&showHeader=true">Web</a>
-          | <a href="https://ge.ch/hrcintreport/createReport?rcentId=14574965200000066031025&lang=FR">PDF</a>
+        <td>
+          <a href="https://ge.ch/hrcintapp/companyReport.action?lang=EN&rcentId=14574965200000066031025&showHeader=true">Web</a>
+          |
+          <a href="https://ge.ch/hrcintreport/createReport?rcentId=14574965200000066031025&lang=FR">PDF</a>
         </td>
       </tr>
     </table>
@@ -53,7 +55,7 @@ class Info extends React.Component {
               
               
         
-      </Layout>
+      </BasicLayout>
     )
   }
 }
