@@ -4,7 +4,7 @@ html {
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: rgb(245, 244, 241);
+    background-color: #ffffff; /* rgb(245, 244, 241) */
 }
 
 body {
