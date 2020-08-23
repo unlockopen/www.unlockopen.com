@@ -1,66 +1,22 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
-  "version": "1.0.0",
-  "author": "Tobie Langel",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
-  },
-  "dependencies": {
-    "color": "^3.1.0",
-    "gatsby": "^1.9.250",
-    "gatsby-image": "^2.0.26",
-    "gatsby-link": "^1.6.39",
-    "gatsby-plugin-feed": "^1.3.20",
-    "gatsby-plugin-google-analytics": "^1.0.29",
-    "gatsby-plugin-node-fields": "^1.0.0",
-    "gatsby-plugin-offline": "^1.0.15",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-react-next": "^1.0.11",
-    "gatsby-plugin-sharp": "^1.6.48",
-    "gatsby-plugin-typography": "^1.7.18",
-    "gatsby-remark-copy-linked-files": "^1.5.31",
-    "gatsby-remark-images": "^1.5.61",
-    "gatsby-remark-prismjs": "^1.2.24",
-    "gatsby-remark-responsive-iframe": "^1.4.18",
-    "gatsby-remark-smartypants": "^1.4.12",
-    "gatsby-source-dropbox": "0.0.1",
-    "gatsby-source-filesystem": "^1.5.31",
-    "gatsby-source-trello": "tobie/gatsby-source-trello#custom-fields",
-    "gatsby-transformer-open-graph": "^2.0.1",
-    "gatsby-transformer-remark": "^1.7.40",
-    "gatsby-transformer-sharp": "^1.6.27",
-    "lodash": "^4.17.5",
-    "prop-types": "^15.6.2",
-    "remark": "^10.0.1",
-    "remark-html": "^9.0.0",
-    "typography": "^0.16.17",
-    "typography-breakpoint-constants": "^0.15.10"
-  },
-  "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.7.0",
-    "gh-pages": "^1.1.0",
-    "prettier": "^1.12.0"
-  },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
+  "name": "unlockopen.com.v2",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "gatsby develop",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
+  },
+  "keywords": [],
+  "author": "Tobie Langel <tobie@unlockopen.com>",
+  "private": true,
+  "devDependencies": {
+    "@11ty/eleventy": "github:11ty/eleventy#master",
+    "eleventy-plugin-reading-time": "0.0.1",
+    "markdown-it": "^10.0.0",
+    "moment": "^2.24.0"
   }
 }

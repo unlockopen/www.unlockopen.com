@@ -1,0 +1,14 @@
+---
+title: Articles
+tags: []
+---
+{% for article in collections.articles %}
+    <h2><a href="{{ article.url }}">{{ article.data.title }}</a></h2>
+    <p>{{article.data.lead}}</p>
+    <p>
+        {% if article.data.author %}{{ article.data.author }}{% endif %}
+        {% if article.data.author and article.date %}·{% endif %}
+        {% if article.date %}<time datetime="{{ article.date | dateIso }}">{{ article.date | dateFormated }}</time>{% endif %}
+    </p>
+
+{% endfor %}

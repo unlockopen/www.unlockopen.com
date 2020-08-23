@@ -1,0 +1,24 @@
+<header>
+    <h1>{{ html.title | safe }}</h1>
+    {% if html.lead %}
+        <p>{{  html.lead | safe }}</p>
+    {% endif %}
+
+    {% if author or date %}
+    <div class=meta>
+        <p>
+            {% if author %}{{ author }}{% endif %}
+            {% if author and date %}·{% endif %}
+            {% if date %}<time datetime="{{ date | dateIso }}">{{ date | dateFormated }}</time>{% endif %}
+            ·
+            {{ content | readingTime }} read
+        </p>
+    </div>
+    {% endif %}
+    {% if img %}
+    <figure>
+        <img src="../img/{{ img }}" alt="{{alt}}" />
+        {% if html.legend %}<p>{{ html.legend | safe }}</p>{% endif %}
+    </figure>   
+    {% endif %}
+</header>

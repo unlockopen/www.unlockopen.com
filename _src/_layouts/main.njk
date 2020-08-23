@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+{% set css %}
+  {% include "main.css" %}
+{% endset %}
+<!-- feed it through our cssmin filter to minify -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+    {{ css | safe }}
+    </style>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+
+      </div>
+      <main>
+        {% if title %}
+          {% include "components/header.html" %}
+        {% endif %}
+        {{ content | safe }}
+        {% if html.disclosure %}
+          <hr>
+          <p class="disclosure">Full disclosure: {{ html.disclosure | safe }}</p>
+        {% endif %}
+      </main>
+    </div>
+  </body>
+</html>
