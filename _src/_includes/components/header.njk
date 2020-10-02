@@ -16,9 +16,9 @@
     </div>
     {% endif %}
     {% if img %}
-    <figure>
-        <img src="../img/{{ img }}" alt="{{alt}}" />
-        {% if html.legend %}<p>{{ html.legend | safe }}</p>{% endif %}
-    </figure>   
+    	<figure>
+            <img src="../img/{{ img }}" alt="{{alt}}" />
+            {% if html.legend %}<figcaption>{{ html.legend | safe }}</figcaption>{% endif %}
+        </figure>
     {% endif %}
 </header>

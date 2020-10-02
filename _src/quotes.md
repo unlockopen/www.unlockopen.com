@@ -1,5 +1,4 @@
 ---
-layout: main.njk
 title: Industry leaders explain the benefits of contributing to open source
 ---
 

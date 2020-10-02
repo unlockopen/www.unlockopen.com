@@ -17,10 +17,8 @@
       <div class="sidebar">
 
       </div>
-      <main>
-        {% if title %}
-          {% include "components/header.html" %}
-        {% endif %}
+      <main>		  
+        {% include "components/header.njk" %}
         {{ content | safe }}
         {% if html.disclosure %}
           <hr>

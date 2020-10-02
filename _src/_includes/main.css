@@ -63,7 +63,7 @@ header div.meta p {
     font-size: 0.81225rem;
     font-weight: 300;
     margin-bottom: 0;
-    color: #333
+    color: #333;	
 }
 
 h2 {
@@ -138,7 +138,8 @@ main {
 }
 
 main img {
-    width: 100%;
+    max-width: 100%;
+	height: auto;
     margin: 1.6rem auto;
 }
 
@@ -146,7 +147,7 @@ main figure img {
     margin-bottom: 0.8rem;
 }
 
-main figure p {
+main figcaption {
     text-align: center;
     font-size: 0.81225rem;
 }
