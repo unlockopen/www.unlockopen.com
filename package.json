@@ -14,7 +14,7 @@
   "author": "Tobie Langel <tobie@unlockopen.com>",
   "private": true,
   "devDependencies": {
-    "@11ty/eleventy": "github:11ty/eleventy#master",
+    "@11ty/eleventy": "0.11.0",
     "eleventy-plugin-reading-time": "0.0.1",
     "markdown-it": "^10.0.0",
     "moment": "^2.24.0"
