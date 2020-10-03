@@ -30,6 +30,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("_src/articles/img");
 
     return {
+        markdownTemplateEngine: "njk",
         dir: {
             input: "_src",
             includes: "_includes",
