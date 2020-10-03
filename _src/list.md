@@ -1,5 +1,5 @@
 ---
-bio: true
+layout: main.njk
 ---
 
 # Join UnlockOpen's Mailing List
